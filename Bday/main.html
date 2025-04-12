@@ -1,0 +1,112 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afrah's Birthday Surprise 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to right, #ffe6f7, #d0f4ff);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .card {
+      width: 250px;
+      height: 350px;
+      margin: 15px;
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .card-front {
+      background-color: #ffcad4;
+      color: #333;
+    }
+    .card-back {
+      background-color: #9efeff;
+      color: #222;
+      transform: rotateY(180deg);
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/22/audio_7d7a4dfae8.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">You bring joy like wild cards in UNO 💛</div>
+      <div class="card-back">Seriously, never a dull moment with you!</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">You make everyone feel special ✨</div>
+      <div class="card-back">And today, it’s all about YOU 💫</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Afrah = Sunshine + Sass ☀️🔥</div>
+      <div class="card-back">Keep slaying with your golden heart!</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">Here's to more laughs and memories 🥳</div>
+      <div class="card-back">And to the best year ahead! 💐</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">📸 Your smile deserves its own movie</div>
+      <div class="card-back"><img src="afrah1.jpg" alt="Afrah Pic" style="width:100%; height:auto; border-radius:10px;"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">This one’s for the sweetest soul 💖</div>
+      <div class="card-back">Happy Birthday, Afrah! You’re loved! 🎂</div>
+    </div>
+  </div>
+</body>
+</html>
